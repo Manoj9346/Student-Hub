@@ -1,0 +1,91 @@
+/* Forum Management Page */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Top Nav */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.top-nav .logo h2 {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.top-nav .nav-links a {
+    margin-left: 15px;
+    color: #f3f4f6;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.top-nav .nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    padding: 20px;
+    color: #f3f4f6;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #38bdf8;
+}
+
+/* Table *//* Table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    color: #e5e7eb;
+    table-layout: fixed; /* ensures equal spacing */
+    word-break: break-word;
+    overflow-x: auto;
+    display: block; /* allows scrolling */
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.styled-table th {
+    background: rgba(56,189,248,0.15);
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.styled-table tr:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+/* Mobile (scrollable instead of hiding header) */
+@media (max-width: 768px) {
+    .styled-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .styled-table td, .styled-table th {
+        min-width: 120px; /* ensures readability */
+    }
+}
+
+

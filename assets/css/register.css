@@ -1,0 +1,127 @@
+/* Register Page Styling */
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f9fafb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.register-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* Heading */
+.register-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #06b6d4, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff; /* fallback */
+}
+
+/* Form */
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-container input,
+.register-container select {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: #f9fafb;
+  transition: 0.3s;
+}
+
+.register-container input:focus,
+.register-container select:focus {
+  border: 2px solid #06b6d4;
+  background: rgba(255,255,255,0.15);
+}
+
+/* Button */
+.register-container button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #06b6d4, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(99,102,241,0.4);
+}
+
+/* Error message */
+.error {
+  color: #f87171; /* red */
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Login link */
+.login-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.login-link a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+/* Switch between Login/Register link */
+.switch-link {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #f9fafb; /* brighter text */
+}
+
+.switch-link a {
+  color: #5eeedb; /* cyan accent */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.switch-link a:hover {
+  color: #facc15; /* gold hover */
+  text-shadow: 0 0 8px rgba(250, 204, 21, 0.6);
+}

@@ -1,0 +1,81 @@
+/* ✅ Manage Students Page - Dark Theme, Professional Hover */
+
+:root{
+  --bg: #0f172a;
+  --card: #1e293b;
+  --card-alt: #111827;
+  --text: #f9fafb;
+  --muted: #94a3b8;
+  --brand: #4f46e5;   /* indigo */
+  --brand-2:#2563eb;  /* blue */
+  --focus:#38bdf8;    /* sky */
+  --danger:#dc2626;
+  --danger-2:#b91c1c;
+  --success:#16a34a;
+}
+
+/* Base */
+*{ box-sizing: border-box; }
+html, body { height: 100%; margin:0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+
+/* Top Nav */
+.top-nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; gap:12px; }
+.top-nav .logo h2 { margin:0; font-size:1.8rem; font-weight:800; color:#fff; }
+.top-nav .nav-links a { margin-left:16px; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:6px; padding:8px 12px; border-radius:8px; transition: all 0.2s ease; }
+.top-nav .nav-links a.logout { background: rgba(220,38,38,.15); border:1px solid rgba(220,38,38,.3); }
+.top-nav .nav-links a:hover { background: rgba(99,102,241,.25); color:#fff; transform: translateY(-2px); }
+
+/* Status Banner */
+.status-banner { padding:10px 14px; border-radius:10px; margin-bottom:18px; font-weight:600; transition: all 0.2s ease; border:1px solid rgba(34,197,94,.35); background: rgba(34,197,94,.18); }
+.status-banner:hover { background: rgba(34,197,94,.3); color:#f0fff4; box-shadow:0 0 10px rgba(34,197,94,.4); }
+
+/* Card */
+.card { background: var(--card); border-radius:16px; padding:18px; margin-bottom:22px; border:1px solid rgba(255,255,255,.06); box-shadow:0 10px 32px rgba(2,6,23,.6); transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease; }
+.card.compact{ padding:14px 16px; }
+.card:hover { transform: translateY(-4px); box-shadow:0 15px 40px rgba(2,6,23,.8); background: linear-gradient(145deg, #1e293b, #111827); border-color: rgba(99,102,241,.25); }
+
+/* Card Header */
+.card-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; gap:8px; }
+.card h3 { margin:0; font-size:1.35rem; font-weight:800; }
+
+/* Form Inputs */
+.student-form input { padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); color: var(--text); transition: all 0.2s ease; }
+.student-form input::placeholder { color:#cbd5e1; }
+.student-form input:focus { outline:none; border-color: var(--focus); box-shadow:0 0 10px rgba(56,189,248,.3); background: rgba(255,255,255,.12); }
+
+/* Buttons */
+.btn { border:none; border-radius:10px; padding:10px 14px; font-weight:800; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition: all 0.2s ease; }
+.btn.primary { background: linear-gradient(90deg, #3b82f6, #8b5cf6); color:#fff; }
+.btn.primary:hover { background: linear-gradient(90deg, #2563eb, #7c3aed); box-shadow:0 6px 18px rgba(99,102,241,.4); transform: translateY(-2px); }
+.btn.success { background: linear-gradient(90deg, #22c55e, #16a34a); color:#fff; }
+.btn.success:hover { background: linear-gradient(90deg, #16a34a, #22c55e); box-shadow:0 6px 18px rgba(34,197,94,.4); transform: translateY(-2px); }
+.btn.ghost { background:transparent; color:#e5e7eb; border:1px solid rgba(255,255,255,.18); }
+.btn.ghost:hover { background: rgba(255,255,255,.08); transform: translateY(-1px); }
+.btn-danger { background: var(--danger); color:#fff; border:1px solid rgba(0,0,0,.15); }
+.btn-danger:hover { background: var(--danger-2); transform: translateY(-1px); }
+.btn-edit { background: var(--success); color:#fff; border:1px solid rgba(0,0,0,.15); }
+.btn-edit:hover { background:#15803d; transform: translateY(-1px); }
+
+/* Controls / Search */
+.controls { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+.search { display:inline-flex; align-items:center; gap:10px; padding:10px 12px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); flex:1 1 320px; }
+.search input { border:none; background:transparent; color:var(--text); width:100%; }
+.search input:focus { box-shadow:0 0 8px rgba(56,189,248,.3); }
+
+/* Table */
+.table-wrap { width:100%; overflow-x:auto; border-radius:12px; }
+.styled-table { width:100%; border-collapse:collapse; font-size:1rem; color:var(--text); min-width:900px; }
+.styled-table thead th { position:sticky; top:0; background:var(--brand); color:#fff; padding:14px 16px; font-weight:800; }
+.styled-table td { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.08); }
+.styled-table tbody tr:nth-child(even) { background: var(--card-alt); }
+.styled-table tbody tr:nth-child(odd) { background: var(--card); }
+.styled-table tbody tr:hover { background: linear-gradient(90deg, #4f46e5, #2563eb); color:#fff; transform:scale(1.01); transition: all 0.2s ease; }
+
+.center{ text-align:center; }
+.no-data { text-align:center; color:#f87171; font-weight:700; padding:12px; }
+.skills-cell { white-space: nowrap; overflow:hidden; text-overflow:ellipsis; max-width:280px; }
+
+/* Responsive */
+@media (max-width:980px){ .form-row{ grid-template-columns:1fr 1fr; } .skills-cell{ max-width:220px; } }
+@media (max-width:720px){ .top-nav{ flex-direction:column; align-items:flex-start; gap:10px; } .top-nav .nav-links a{ margin-left:0; } .form-row{ grid-template-columns:1fr; } .table-wrap{ border-radius:10px; } .styled-table{ min-width:720px; } }

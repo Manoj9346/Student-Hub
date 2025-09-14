@@ -1,0 +1,110 @@
+/* View Thread Page - Dark/Glass Theme */
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+}
+
+.thread-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #6366f1, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.thread-meta {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.thread-body {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 20px 0;
+}
+
+.replies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.replies-list li {
+    background: rgba(255,255,255,0.05);
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+
+.no-replies {
+    color: #f87171;
+    font-weight: 600;
+}
+
+.reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: vertical;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 12px;
+}
+
+.reply-form button {
+    background: #10b981;
+    color: #f9fafb;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reply-form button:hover {
+    background: #059669;
+}
+
+.back-links {
+    margin-top: 20px;
+}
+
+.back-links a {
+    color: #93c5fd;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.back-links a:hover {
+    color: #facc15;
+}
+
+.error-msg {
+    color: #f87171;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
